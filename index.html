@@ -1,0 +1,895 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5IN（ファイブ・イン）対話型の年間プログラム | ユニバーサルリサーチラボ</title>
+<meta name="description" content="同じ部署の10〜20名で、月に1回・90分を1年。語り、問い返される対話の場で、職場の会話と働き方を変える対話型の年間プログラム「5IN」。キャリアデザイン・ウェルビーイングの2テーマ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --white:#FFFFFF; --beige:#F4F3F1; --paper:#FBFAF9; --sage:#D4D3D3; --sage-soft:#E7E6E5; --dot:#E1E0DF;
+  --green:#1C1C1E; --green-2:#302F32; --green-3:#3E3D41; --green-4:#4E4C51; --ink:#121214; --text:#2A2A2B; --muted:#56555A;
+  --copper:#D9136F; --copper-text:#C2105F; --line:#DBDAD9;
+  --acc:#D9136F; --acc-ink:#FFFFFF; --acc-hover:#BF1464; --acc-dk:#FF62AB;
+  --jp:'Zen Kaku Gothic New',sans-serif; --en:'Jost','Zen Kaku Gothic New',sans-serif;
+  --wrap:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{background:var(--white);color:var(--text);font-family:var(--jp);font-size:16px;line-height:1.9;letter-spacing:.04em;-webkit-font-smoothing:antialiased;word-break:auto-phrase;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,.sec-head p,.roots-tl,.prog-goal,.promise,.hero-lead,.sub-h h3,.root h3{word-break:auto-phrase;text-wrap:balance}
+p,li,dd{text-wrap:pretty}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
+.narrow{max-width:860px}
+.en{font-family:var(--en)}
+.tbd{background:#FFF4C2;border-bottom:1px dashed #C9A227;padding:0 4px;color:#5B4A0C}
+.br-pc{display:inline}
+.sp-only,.sp-br{display:none}
+/* header */
+.hd{position:sticky;top:0;z-index:50;background:var(--beige);border-bottom:1px solid transparent;transition:border-color .2s}
+.hd.is-scrolled{border-color:var(--line)}
+.hd .wrap{display:flex;align-items:center;justify-content:space-between;height:80px;max-width:1280px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--green)}
+.logo svg{width:52px;height:40px}
+.logo b{font-family:var(--en);font-weight:400;font-size:28px;letter-spacing:.02em;line-height:1}
+.logo span{font-family:var(--en);font-size:14px;letter-spacing:.02em;color:var(--green);line-height:1;margin-top:8px}
+.gnav{display:flex;align-items:center;gap:28px}
+.gnav a{font-size:14px;text-decoration:none;color:var(--green);letter-spacing:.06em}
+.gnav a:hover{color:var(--copper-text)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 32px;font-family:var(--jp);font-size:15px;font-weight:500;letter-spacing:.08em;text-decoration:none;border:1px solid var(--copper);cursor:pointer;transition:background .2s,color .2s}
+.btn-fill{background:var(--green);border-color:var(--green);color:#fff}
+.btn-fill:hover{background:var(--ink)}
+.btn-line{background:transparent;color:var(--green)}
+.btn-line:hover{background:var(--copper);color:#fff}
+.btn svg{width:16px;height:16px}
+.gnav .btn{min-height:44px;padding:0 22px;font-size:14px;color:#fff}
+.menu-btn{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.menu-btn i{display:block;width:30px;height:2px;background:var(--green);margin:7px auto}
+/* hero */
+.hero{background:var(--beige);padding-bottom:40px}
+.hero-head{text-align:center;padding-top:72px;padding-bottom:56px}
+.hero-eyebrow{font-size:14px;letter-spacing:.3em;color:var(--copper-text)}
+.hero-mark{display:flex;align-items:baseline;justify-content:center;gap:18px;margin:18px 0 26px}
+.hero-mark b{font-family:var(--en);font-weight:400;font-size:88px;line-height:1;letter-spacing:.06em;color:var(--green)}
+.hero-mark span{font-size:15px;letter-spacing:.24em;color:var(--green)}
+.hero h1{font-size:40px;font-weight:500;line-height:1.7;letter-spacing:.1em;color:var(--green)}
+.hero-lead{max-width:680px;margin:26px auto 0;font-size:16px;color:var(--text)}
+.hero-cta{display:flex;justify-content:center;gap:16px;margin-top:36px;flex-wrap:wrap}
+.hero-cta .btn{min-width:280px}
+.hero-price{margin-top:16px;font-size:13px;color:var(--muted);letter-spacing:.06em}
+.hero-visual{display:grid;grid-template-columns:1.15fr 1fr;max-width:1280px;margin:0 auto;padding:0 80px}
+.hero-visual .ph,.hero-visual .panel{overflow:hidden;height:520px}
+.hero-visual .ph img{width:100%;height:100%;object-fit:cover}
+.hero-visual .panel{background:var(--sage);display:flex;align-items:center;justify-content:center;padding:40px}
+.hero-visual .panel img{height:100%;width:auto;max-width:100%;aspect-ratio:auto;object-fit:cover;object-position:50% 25%}
+.hero-facts{display:flex;justify-content:center;gap:0;max-width:1120px;margin:0 auto;padding:32px 32px 0;flex-wrap:wrap;border-top:1px solid var(--line)}
+.hero-facts li{list-style:none;padding:0 28px;border-left:1px solid var(--line);font-size:14px;color:var(--muted);text-align:center}
+.hero-facts li:first-child{border-left:0}
+.hero-facts b{display:block;font-weight:500;color:var(--green);font-size:16px}
+/* section */
+.sec{padding:120px 0}
+.sec-beige{background:var(--beige)}
+.sec-paper{background:var(--paper)}
+.sec-green{background:var(--green);color:#E3E2E0}
+.sec-head{text-align:center;margin-bottom:64px}
+.sec-head .label{font-family:var(--en);font-size:13px;letter-spacing:.32em;color:var(--copper-text)}
+.sec-head h2{font-size:32px;font-weight:500;line-height:1.65;letter-spacing:.1em;color:var(--green);margin-top:12px}
+.sec-head p{max-width:720px;margin:20px auto 0;color:var(--text)}
+.sec-green .sec-head h2{color:#F4F3F1}
+.sec-green .sec-head .label{color:#FF62AB}
+.sec-green .sec-head p{color:#C4C4C3}
+.note{font-size:12px;line-height:1.8;color:var(--muted);letter-spacing:.02em}
+/* record strip */
+.record{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--copper);border-bottom:1px solid var(--line)}
+.record div{padding:36px 24px;text-align:center;border-left:1px solid var(--line)}
+.record div:first-child{border-left:0}
+.record b{display:block;font-family:var(--en);font-weight:300;font-size:56px;line-height:1.1;color:var(--green);letter-spacing:.02em}
+.record b small{font-size:22px;margin-left:4px}
+.record span{font-size:14px;color:var(--muted)}
+.clients{margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.clients li{list-style:none;background:var(--white);border:1px solid var(--line);padding:18px 22px;font-size:15px;line-height:1.6;color:var(--green);font-weight:500}
+.clients li em{display:block;font-style:normal;font-weight:400;color:var(--copper-text);font-size:13px;margin-top:2px}
+/* issues */
+.issues{display:grid;grid-template-columns:repeat(3,1fr);column-gap:32px;row-gap:0}
+.issue{text-align:center;display:grid;grid-row:span 5;grid-template-rows:subgrid}
+.issue svg{width:120px;height:96px;margin:0 auto 18px}
+.issue h3{font-size:20px;font-weight:500;color:var(--green);letter-spacing:.1em}
+.issue h3 small{display:block;font-family:var(--en);font-size:12px;letter-spacing:.28em;color:var(--copper-text);font-weight:400;margin-bottom:4px}
+.issue ul{display:contents;text-align:left}
+.issue li:first-child{margin-top:24px;border-top:1px solid var(--line)}
+.issue li{list-style:none;padding:20px 4px;border-bottom:1px solid var(--line);text-align:left}
+.issue li p{font-size:15px;color:var(--text);line-height:1.6}
+.issue li b{display:block;font-family:var(--en);font-weight:400;font-size:40px;line-height:1.2;color:var(--green);margin:6px 0 2px}
+.issue li b small{font-family:var(--jp);font-size:16px;margin-left:2px}
+.issue li span{font-size:13px;color:var(--muted);line-height:1.6;display:block}
+.src{margin-top:40px;text-align:center}
+/* roots */
+.roots{border-top:1px solid #4C4B4C}
+.root{display:grid;grid-template-columns:72px 1fr 1fr;gap:32px;padding:32px 0;border-bottom:1px solid #4C4B4C;align-items:start}
+.root .n{font-family:var(--en);font-weight:300;font-size:44px;line-height:1;color:#FF62AB}
+.root h3{font-size:20px;font-weight:500;line-height:1.7;color:#F4F3F1;letter-spacing:.06em}
+.root p{font-size:15px;line-height:1.85;color:#C4C4C3}
+.root p small{display:block;font-size:12px;letter-spacing:.2em;color:#A2A1A1;margin-bottom:4px}
+.roots-tl{margin-top:56px;text-align:center;font-size:24px;font-weight:500;line-height:1.8;letter-spacing:.1em;color:#F4F3F1}
+.roots-tl em{font-style:normal;border-bottom:1px solid #FF62AB;padding-bottom:2px}
+/* concept */
+.vs{display:grid;grid-template-columns:1fr 64px 1fr;max-width:1000px;margin:0 auto}
+.vs>.l{background:#E7E6E5}
+.vs>.r{background:var(--beige)}
+.vs-h{padding:28px 32px 4px;text-align:center;font-size:20px;font-weight:500;letter-spacing:.1em;line-height:1.5}
+.vs-h small{display:block;font-size:12px;letter-spacing:.2em;font-weight:400;margin-bottom:4px}
+.vs-h.l{color:var(--muted)}
+.vs-h.l small{color:var(--muted)}
+.vs-h.r{color:var(--green)}
+.vs-h.r small{font-family:var(--en);color:var(--copper-text);letter-spacing:.3em}
+.vs-fig{padding:12px 32px 20px}
+.vs-svg{display:block;width:100%;max-width:360px;height:auto;margin:0 auto;font-family:var(--jp)}
+.vs-mid{display:flex;align-items:center;justify-content:center}
+.vs-mid svg{width:26px;height:14px}
+.vs-row{padding:18px 32px;border-top:1px solid var(--line);font-size:15px;line-height:1.6;display:flex;align-items:center;justify-content:center;text-align:center}
+.vs-row.l{color:var(--muted)}
+.vs-row.r{color:var(--green);font-weight:500}
+.vs>.vs-row:nth-last-child(-n+3){padding-top:24px;padding-bottom:24px}
+.vs .nw{display:inline-block}
+/* five IN */
+.five{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:1px solid var(--copper)}
+.five div{padding:32px 20px 8px;border-left:1px solid var(--line)}
+.five div:first-child{border-left:0}
+.five b{font-family:var(--en);font-weight:400;font-size:20px;letter-spacing:.12em;color:var(--green)}
+.five b i{font-style:normal;color:var(--copper-text)}
+.five h3{font-size:16px;font-weight:500;color:var(--green);margin:6px 0 10px}
+.five p{font-size:14px;line-height:1.8;color:var(--text)}
+/* answers */
+.answers{margin-top:96px}
+.ans-head,.ans{display:grid;grid-template-columns:280px 1fr 1.15fr;gap:32px}
+.ans-head{font-size:13px;letter-spacing:.14em;color:var(--muted);padding:0 28px 12px;border-bottom:2px solid var(--green)}
+.ans{background:var(--white);padding:24px 28px;margin-top:12px;align-items:center}
+.ans .c{display:flex;gap:14px;align-items:center;font-size:16px;color:var(--text)}
+.ans .c em{font-style:normal;font-family:var(--en);font-size:15px;color:#fff;background:var(--copper-text);min-width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center}
+.ans .v{font-size:14px;line-height:1.8;color:var(--muted)}
+.ans .f{font-size:16px;font-weight:500;line-height:1.75;color:var(--green);border-left:2px solid var(--copper);padding-left:18px}
+/* overview */
+.ov{display:flex;justify-content:center;gap:0;margin:-24px auto 56px;flex-wrap:wrap;max-width:900px;border:1px solid var(--line);background:var(--white)}
+.ov li{list-style:none;flex:1;min-width:180px;padding:18px 16px;text-align:center;border-left:1px solid var(--line)}
+.ov li:first-child{border-left:0}
+.ov small{display:block;font-size:12px;letter-spacing:.16em;color:var(--muted)}
+.ov b{font-weight:500;color:var(--green);font-size:17px}
+.tabs{display:flex;justify-content:center;gap:0;margin-bottom:48px;border-bottom:1px solid var(--line)}
+.tab{background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:16px 32px;font-family:var(--jp);font-size:17px;font-weight:500;color:var(--muted);letter-spacing:.08em;cursor:pointer}
+.tab[aria-selected="true"]{color:var(--green);border-color:var(--copper)}
+.tab small{display:block;font-size:12px;font-weight:400;letter-spacing:.08em;color:var(--muted);margin-top:2px}
+.panel-p[hidden]{display:none}
+.prog-goal{text-align:center;font-size:24px;font-weight:500;letter-spacing:.1em;color:var(--green);margin-bottom:40px;line-height:1.7}
+.prog-goal small{display:block;font-size:14px;font-weight:400;letter-spacing:.1em;color:var(--muted)}
+details.more summary{display:none}
+.phases{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.phase{background:var(--white)}
+.phase h4{font-size:15px;font-weight:500;letter-spacing:.1em;color:#fff;padding:10px 24px}
+.phase:nth-child(1) h4{background:var(--green-4)}
+.phase:nth-child(2) h4{background:var(--green-3)}
+.phase:nth-child(3) h4{background:var(--green-2)}
+.phase:nth-child(4) h4{background:var(--green)}
+.phase ol{list-style:none;padding:4px 24px 8px}
+.phase li{display:grid;grid-template-columns:40px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.phase li:last-child{border-bottom:0}
+.phase li em{font-style:normal;font-family:var(--en);font-size:15px;color:var(--copper-text);line-height:1.7}
+.phase li small{display:block;font-size:13px;color:var(--muted);line-height:1.6}
+.phase li span{display:block;font-size:16px;font-weight:500;color:var(--green);line-height:1.6}
+.sub-h{margin:80px 0 32px;text-align:center}
+.prog-goal+.sub-h{margin-top:24px}
+.sub-h h3{font-size:24px;font-weight:500;letter-spacing:.1em;color:var(--green);line-height:1.6}
+.sub-h p{font-size:14px;color:var(--muted);margin-top:8px}
+.year{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.year .before{grid-column:1/-1;background:#E5E4E3;padding:12px 20px;font-size:14px;line-height:1.8;color:var(--muted)}
+.year .before b{font-weight:500;color:var(--text);margin-right:12px}
+.y{background:var(--white);display:flex;flex-direction:column}
+.y .m{font-family:var(--en);font-size:20px;color:#fff;padding:10px 20px;letter-spacing:.06em}
+.y:nth-child(2) .m{background:var(--green-4)}.y:nth-child(3) .m{background:var(--green-3)}.y:nth-child(4) .m{background:var(--green-2)}.y:nth-child(5) .m{background:var(--green)}
+.y .st{background:var(--sage-soft);padding:14px 20px 16px;font-size:16px;font-weight:500;line-height:1.7;color:var(--green)}
+.y .st small{display:block;font-size:12px;font-weight:400;letter-spacing:.14em;color:var(--copper-text);margin-bottom:4px}
+.y .ev{padding:14px 20px 18px;font-size:13px;line-height:1.75;color:var(--muted)}
+.y .ev b{color:var(--text);font-weight:500}
+.y .ev p+p{margin-top:8px}
+.how{margin-top:20px;font-size:13px;color:var(--muted);text-align:center}
+.peek{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.peek figure{background:var(--white)}
+.peek img{width:100%;aspect-ratio:16/9;object-fit:cover;border-bottom:1px solid var(--line)}
+.peek figcaption{padding:14px 16px 18px;font-size:14px;line-height:1.75}
+.peek figcaption em{display:block;font-style:normal;font-family:var(--en);font-size:12px;letter-spacing:.14em;color:var(--copper-text);margin-bottom:4px}
+/* session */
+.flow-bar{display:flex;height:64px;margin-bottom:28px}
+.flow-bar div{display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--en);font-size:15px;letter-spacing:.04em;border-left:2px solid var(--white)}
+.flow-bar div:first-child{border-left:0}
+.steps{display:grid;grid-template-columns:1fr 1fr 2.2fr 1fr 1fr;grid-template-rows:auto auto auto;column-gap:16px;row-gap:0;margin-top:-20px}
+.step{display:grid;grid-row:span 3;grid-template-rows:subgrid;align-content:start;padding:20px 0}
+.step h3{font-size:16px;font-weight:500;color:var(--green);line-height:1.6}
+.step p{font-size:14px;line-height:1.8;color:var(--text);margin-top:8px}
+.step q{display:block;margin-top:12px;font-size:13px;line-height:1.7;color:var(--copper-text);quotes:none;border-top:1px solid var(--line);padding-top:10px}
+.step.main{background:var(--white);padding:20px 24px}
+/* report */
+.report{display:grid;grid-template-columns:1.2fr 1fr;gap:56px}
+.timeline li{list-style:none;display:grid;grid-template-columns:110px 1fr;gap:20px;padding:20px 0;border-bottom:1px solid var(--line)}
+.timeline li:first-child{border-top:1px solid var(--line)}
+.timeline em{font-style:normal;font-size:14px;color:var(--copper-text);letter-spacing:.08em}
+.timeline b{display:block;font-weight:500;color:var(--green);font-size:17px}
+.timeline span{font-size:14px;line-height:1.8;color:var(--text)}
+.give{display:grid;gap:16px}
+.give div{background:var(--white);padding:24px 28px}
+.give h4{font-size:15px;font-weight:500;color:var(--green);display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.give h4 svg{width:20px;height:20px}
+.give li{list-style:none;font-size:14px;line-height:1.7;padding:6px 0 6px 18px;position:relative}
+.give li::before{content:"";position:absolute;left:0;top:15px;width:8px;height:1px;background:var(--copper)}
+.promise{margin-top:40px;text-align:center;font-size:17px;font-weight:500;color:var(--green);letter-spacing:.08em}
+/* compare */
+.cmp{width:100%;border-collapse:collapse;font-size:15px}
+.cmp th,.cmp td{padding:18px 12px;text-align:center;border-bottom:1px solid var(--line)}
+.cmp thead th{font-size:13px;font-weight:500;color:var(--green);letter-spacing:.06em;border-bottom:2px solid var(--green);line-height:1.5}
+.cmp td:first-child,.cmp th:first-child{text-align:left}
+.cmp td:last-child,.cmp th:last-child{text-align:left;font-size:13px;color:var(--muted);line-height:1.7;width:30%}
+.cmp .mk{font-size:18px;color:var(--muted)}
+.cmp tr.us td{background:var(--green);color:#F4F3F1;font-weight:500;border-bottom:0}
+.cmp tr.us .mk{color:#FF62AB}
+.cmp tr.us td:last-child{color:#C4C4C3}
+.cmp .pp{display:none}
+.cmp .sm{display:none}
+.cmp-note{margin-top:28px;font-size:15px;line-height:1.9;max-width:900px}
+/* facilitator */
+.fac{display:grid;grid-template-columns:380px 1fr;gap:72px;align-items:stretch}
+.fac>div:last-child{display:flex;flex-direction:column}
+.fac .prof{margin-top:auto}
+.fac-ph{background:var(--sage);padding:32px 32px 0;display:flex}
+.fac-ph img{width:100%;height:100%;min-height:316px;object-fit:cover;object-position:50% 20%;mix-blend-mode:multiply}
+.fac-name{font-size:30px;font-weight:500;letter-spacing:.2em;color:var(--green)}
+.fac-name small{display:block;font-family:var(--en);font-size:13px;letter-spacing:.3em;color:var(--copper-text);font-weight:400}
+.fac-role{font-size:14px;color:var(--muted);margin:4px 0 24px}
+.fac-rec{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);border-left:2px solid var(--copper);margin-bottom:24px}
+.fac-rec li{padding:2px 20px 2px 24px}
+.fac-rec li+li{border-left:1px solid var(--line)}
+.fac-rec b{display:block;font-family:var(--en);font-weight:300;font-size:40px;line-height:1.1;color:var(--green);font-variant-numeric:lining-nums}
+.fac-rec b small{font-family:var(--jp,inherit);font-size:14px;margin-left:4px;color:var(--copper-text)}
+.fac-rec span{display:block;font-size:12px;color:var(--muted);line-height:1.6;margin-top:6px}
+.prof{border-top:1px solid var(--line)}
+.prof div{display:grid;grid-template-columns:96px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-size:14px;line-height:1.8}
+.prof dt{color:var(--muted)}
+.hist{margin-top:72px}
+.hist table{width:100%;border-collapse:collapse;font-size:15px;background:var(--white)}
+.hist th{font-size:13px;font-weight:500;color:var(--muted);text-align:left;padding:14px 20px;border-bottom:2px solid var(--green);letter-spacing:.08em}
+.hist td{padding:16px 20px;border-bottom:1px solid var(--line)}
+.hist td:last-child,.hist th:last-child{text-align:right;font-family:var(--en)}
+/* price */
+.price .ask-h{font-size:22px!important;font-weight:500!important;line-height:1.6!important;letter-spacing:.06em!important;margin:18px 0 12px!important;color:#F4F3F1!important}
+.price .ask-p{text-wrap:pretty;font-size:14px!important;line-height:1.9!important;color:#C4C4C3!important}
+.ask-cta{display:grid;gap:10px;margin-top:24px}
+.price{display:grid;grid-template-columns:1fr 1.2fr;gap:0;background:var(--white);border:1px solid var(--line)}
+.price-main{padding:48px;background:var(--green);color:#F4F3F1}
+.price-main small{display:block;font-size:24px;font-weight:500;letter-spacing:.1em;line-height:1.5;margin-bottom:14px;color:#F4F3F1}
+.price-main h3{font-size:20px;font-weight:500;letter-spacing:.1em;margin-top:6px}
+.price-main .yen{display:flex;align-items:baseline;gap:8px;margin:20px 0 4px}
+.price-main .yen b{font-family:var(--en);font-weight:300;font-size:96px;line-height:1;letter-spacing:.02em}
+.price-main .yen span{font-size:22px}
+.price-main .yen i{font-style:normal;font-size:14px;color:#C4C4C3}
+.price-main p{font-size:14px;color:#C4C4C3}
+.per{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
+.per div{border:1px solid #4C4B4C;padding:14px 16px;font-size:13px;color:#C4C4C3;line-height:1.7}
+.per b{display:block;font-size:17px;font-weight:500;color:#F4F3F1}
+.price-side{padding:40px 48px}
+.price-side h4{font-size:15px;font-weight:500;color:var(--green);letter-spacing:.1em;margin-bottom:10px}
+.price-side ul{margin-bottom:28px}
+.price-side li{list-style:none;font-size:14px;line-height:1.7;padding:7px 0 7px 26px;position:relative;border-bottom:1px solid var(--line)}
+.price-side li svg{position:absolute;left:0;top:11px;width:16px;height:16px}
+.budget{display:grid;gap:10px}
+.budget div{display:grid;grid-template-columns:110px 1fr;gap:14px;font-size:14px;line-height:1.7}
+.budget b{font-weight:500;color:var(--copper-text)}
+/* process */
+.process{display:grid;grid-template-columns:repeat(6,1fr);gap:0;position:relative}
+.process li{list-style:none;padding:0 16px;position:relative}
+.process li::before{content:"";position:absolute;top:21px;left:0;right:0;height:1px;background:var(--copper)}
+.process li:first-child::before{left:50%}.process li:last-child::before{right:50%}
+.process .dot{position:relative;width:44px;height:44px;border-radius:50%;background:var(--dot);border:1px solid var(--copper);margin:0 auto 18px;display:flex;align-items:center;justify-content:center;font-family:var(--en);color:var(--green);font-size:15px}
+.process em{display:block;font-style:normal;text-align:center;font-size:13px;color:var(--copper-text);letter-spacing:.06em}
+.process h3{text-align:center;font-size:16px;font-weight:500;color:var(--green);margin:2px 0 8px}
+.process p{font-size:13px;line-height:1.75;color:var(--text)}
+.process-note{margin-top:40px;text-align:center}
+/* faq */
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:36px 1fr 24px;gap:12px;align-items:center;padding:24px 4px;font-size:17px;font-weight:500;color:var(--green);line-height:1.6}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary em,.faq .a em{font-style:normal;font-family:var(--en);font-size:22px;color:var(--copper-text);font-weight:400}
+.faq summary svg{width:18px;height:18px;transition:transform .2s}
+.faq details[open] summary svg{transform:rotate(45deg)}
+.faq .a{display:grid;grid-template-columns:36px 1fr;gap:12px;padding:0 4px 28px;font-size:15px;line-height:1.9}
+.faq .a em{color:var(--green-3)}
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:72px}
+.contact h2{font-size:36px;font-weight:500;line-height:1.6;letter-spacing:.12em;color:#F4F3F1}
+.contact .label{font-family:var(--en);font-size:13px;letter-spacing:.32em;color:#FF62AB;margin-bottom:12px}
+.contact>div>p:not(.label){color:#C4C4C3;margin-top:20px}
+.contact dl{margin-top:40px;border-top:1px solid #4C4B4C}
+.contact dl div{display:grid;grid-template-columns:96px 1fr;padding:14px 0;border-bottom:1px solid #4C4B4C;font-size:15px}
+.contact dt{color:#A2A1A1}
+.contact dd{color:#F4F3F1}
+form{background:var(--paper);padding:40px;color:var(--text)}
+.f-row{margin-bottom:18px}
+.f-row label,.f-row .lbl{display:block;font-size:14px;font-weight:500;color:var(--green);margin-bottom:6px}
+.f-row label i,.f-row .lbl i{font-style:normal;font-size:11px;color:#fff;background:var(--copper-text);padding:1px 6px;margin-left:8px;vertical-align:2px}
+.f-row input,.f-row textarea,.f-row select{width:100%;font-family:var(--jp);font-size:16px;padding:12px 14px;border:1px solid #CCCACB;background:#fff;color:var(--ink);border-radius:0}
+.f-row input:focus,.f-row textarea:focus{outline:2px solid var(--copper);outline-offset:-1px}
+.f-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.radios{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.radios label{display:flex;align-items:center;gap:10px;border:1px solid #CCCACB;background:#fff;padding:12px 14px;font-size:15px;font-weight:400;color:var(--text);margin:0;cursor:pointer}
+.radios input{width:18px;height:18px;accent-color:var(--green)}
+.f-note{font-size:12px;color:var(--muted);margin:4px 0 20px;line-height:1.7}
+form .btn{width:100%}
+.sent{display:none;padding:24px;background:var(--sage-soft);color:var(--green);font-size:15px;margin-top:16px}
+/* footer */
+.ft{background:var(--beige);padding:56px 0 40px;font-size:13px;color:var(--muted)}
+.ft .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.ft address{font-style:normal;line-height:1.9;margin-top:16px}
+/* sp cta */
+.sp-cta{display:none}
+@media (max-width:1100px){
+  .gnav a:not(.btn){display:none}
+  .five{grid-template-columns:repeat(3,1fr)}
+  .five div:nth-child(4){border-left:0}
+  .year{grid-template-columns:repeat(2,1fr)}
+  .year .before{grid-column:1/-1}
+  .process{grid-template-columns:repeat(3,1fr);row-gap:40px}
+  .process li:nth-child(3)::before{right:50%}.process li:nth-child(4)::before{left:50%}
+}
+@media (max-width:820px){
+  body{font-size:15px;line-height:1.85}
+  .wrap{padding:0 20px}
+  .br-pc{display:none}
+  .sp-only,.sp-br{display:inline}
+  html{scroll-padding-top:68px}
+  .hd .wrap{height:64px}
+  .logo svg{width:40px;height:32px}
+  .logo b{font-size:22px}
+  .logo span{font-size:11px;margin-top:6px}
+  .gnav{display:none}
+  .gnav.open{display:flex;position:fixed;top:64px;left:0;right:0;bottom:0;background:var(--beige);flex-direction:column;align-items:stretch;gap:0;padding:12px 20px}
+  .gnav.open a:not(.btn){display:block;padding:18px 4px;border-bottom:1px solid var(--line);font-size:16px}
+  .gnav.open .btn{margin-top:24px;min-height:56px}
+  .menu-btn{display:block}
+  .hero{padding-bottom:36px}
+  .hero-head{padding-top:36px;padding-bottom:32px}
+  .hero-eyebrow{font-size:12px;letter-spacing:.2em}
+  .hero-mark{margin:12px 0 18px;gap:12px}
+  .hero-mark b{font-size:60px}
+  .hero-mark span{font-size:13px}
+  .hero h1{font-size:25px;letter-spacing:.06em}
+  .hero-lead{font-size:15px;text-align:left;margin-top:18px}
+  .hero-cta{flex-direction:column;gap:12px;margin-top:24px}
+  .hero-cta .btn{min-width:0;width:100%}
+  .hero-visual{grid-template-columns:1fr 1fr;padding:0 20px}
+  .hero-visual .ph,.hero-visual .panel{height:300px}
+  .hero-visual .panel{padding:20px}
+  .hero-visual .panel img{width:80%}
+  .hero-facts{padding-top:24px;display:grid;grid-template-columns:1fr 1fr;row-gap:16px}
+  .hero-facts li{padding:0 8px;font-size:12px}
+  .hero-facts li:nth-child(3){border-left:0}
+  .sec{padding:80px 0}
+  .sec-head{margin-bottom:40px}
+  .sec-head h2{font-size:23px;letter-spacing:.06em}
+  .sec-head p{text-align:left}
+  .record{grid-template-columns:1fr}
+  .record div{border-left:0;border-top:1px solid var(--line);padding:24px 12px}
+  .record div:first-child{border-top:0}
+  .record b{font-size:44px}
+  .clients{grid-template-columns:1fr}
+  .issues{grid-template-columns:1fr;gap:56px}
+  .issue{display:block}
+  .issue ul{display:block}
+  .root{grid-template-columns:44px 1fr;gap:12px 16px;padding:24px 0}
+  .root .n{font-size:32px}
+  .root h3{font-size:17px}
+  .root p{grid-column:2}
+  .roots-tl{font-size:18px;text-align:left}
+  .vs{grid-template-columns:1fr 22px 1fr}
+  .vs-h{padding:20px 10px 2px;font-size:15px;letter-spacing:.04em}
+  .vs-h small{font-size:10px}
+  .vs-fig{padding:8px 8px 12px}
+  .vs-row{padding:12px 10px;font-size:13px}
+  .vs-mid svg{width:16px;height:10px}
+  .five{grid-template-columns:1fr}
+  .five div{border-left:0;border-top:1px solid var(--line);padding:20px 4px}
+  .five div:first-child{border-top:0}
+  .answers{margin-top:64px}
+  .ans-head{display:none}
+  .ans{grid-template-columns:1fr;gap:10px;padding:20px}
+  .ov{margin:-8px auto 40px}
+  .ov li{min-width:50%;flex:0 0 50%;border-left:0;border-top:1px solid var(--line)}
+  .ov li:nth-child(-n+2){border-top:0}
+  .ov li:nth-child(even){border-left:1px solid var(--line)}
+  .tab{padding:12px 6px;font-size:15px;flex:1;line-height:1.5}
+  .tab small{font-size:11px;letter-spacing:.02em}
+  .prog-goal{font-size:19px}
+  .phases{grid-template-columns:1fr}
+  details.more summary{display:flex;justify-content:space-between;align-items:center;list-style:none;cursor:pointer;background:var(--white);border:1px solid var(--line);padding:16px 18px;font-size:15px;font-weight:500;color:var(--green)}
+  details.more summary::-webkit-details-marker{display:none}
+  details.more summary::after{content:"+";font-size:20px;color:var(--copper)}
+  details.more[open] summary::after{content:"−"}
+  details.more[open] summary{margin-bottom:12px}
+  .year{grid-template-columns:1fr}
+  .y .ev{display:none}
+  .year{gap:0;border-top:1px solid var(--line)}
+  .y{flex-direction:row;align-items:stretch;border-bottom:1px solid var(--line)}
+  .y .m{flex:0 0 76px;font-size:15px;padding:12px 10px;display:flex;align-items:center}
+  .y .st{background:var(--white);font-size:14px;padding:10px 14px}
+  .y .st small{display:none}
+  #p-wb .peek,.wb-peek-h{display:none}
+  .peek{grid-template-columns:1fr 1fr;gap:12px}
+  .peek figcaption{font-size:13px;padding:10px 12px 14px}
+  .flow-bar{height:52px}
+  .flow-bar div{font-size:12px}
+  .steps{grid-template-columns:1fr;grid-template-rows:none;gap:0;margin-top:0}
+  .step{display:block;grid-row:auto}
+  .step{padding:18px 0;border-bottom:1px solid var(--line)}
+  .step.main{margin:0;padding:18px 16px}
+  .report{grid-template-columns:1fr;gap:40px}
+  .timeline li{grid-template-columns:1fr;gap:4px}
+  .cmp{font-size:13px}
+  .cmp th,.cmp td{padding:12px 2px}
+  .cmp th:last-child,.cmp td:last-child{display:none}
+  .cmp td:first-child,.cmp th:first-child{width:40%;padding-left:8px}
+  .cmp td:first-child{font-size:14px;line-height:1.5}
+  .cmp .pp{display:block;font-size:11px;font-weight:400;line-height:1.55;color:var(--muted);margin-top:4px}
+  .cmp tr.us .pp{color:#C4C4C3}
+  .cmp thead th{font-size:11px;letter-spacing:0}
+  .cmp .lg{display:none}.cmp .sm{display:inline}
+  .cmp .mk{font-size:15px}
+  .fac{grid-template-columns:1fr;gap:32px}
+  .fac-ph{max-width:320px;margin:0 auto;padding:28px 28px 0}
+  .fac-ph img{height:auto;min-height:0;aspect-ratio:1/1}
+  .fac-name{font-size:24px}
+  .fac-rec li{padding:0 10px 0 14px}
+  .fac-rec b{font-size:30px}
+  .fac-rec span{font-size:11px}
+  .prof div{grid-template-columns:1fr;gap:0}
+  .hist{margin-top:48px}
+  .hist-scroll{overflow-x:auto}
+  .hist table{min-width:0;font-size:13px}
+  .hist td,.hist th{padding:12px 10px}
+  .price{grid-template-columns:1fr}
+  .price-main,.price-side{padding:32px 24px}
+  .price-main .yen b{font-size:72px}
+  .per{grid-template-columns:1fr}
+  .budget div{grid-template-columns:1fr;gap:0}
+  .process{grid-template-columns:1fr;row-gap:0}
+  .process li{display:grid;grid-template-columns:44px 1fr;gap:4px 16px;padding:0 0 28px}
+  .process li::before{top:0;bottom:0;left:22px;right:auto;width:1px;height:auto}
+  .process li:first-child::before{left:22px;top:22px}
+  .process li:last-child::before{right:auto;bottom:auto;height:22px}
+  .process li:nth-child(3)::before,.process li:nth-child(4)::before{left:22px;right:auto}
+  .process .dot{grid-row:1/4;margin:0}
+  .process em,.process h3{text-align:left}
+  .process h3{margin:0 0 4px}
+  .faq summary{font-size:15px;grid-template-columns:28px 1fr 20px;padding:20px 0}
+  .faq .a{grid-template-columns:28px 1fr;font-size:14px;padding:0 0 24px}
+  .contact{grid-template-columns:1fr;gap:40px}
+  .contact h2{font-size:26px}
+  form{padding:28px 20px}
+  .f-2,.radios{grid-template-columns:1fr}
+  .ft{padding-bottom:110px}
+  .sp-cta{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(244,243,241,.96);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .25s}
+  .sp-cta.show{transform:none}
+  .sp-cta .btn{min-height:48px;padding:0 8px;font-size:14px;letter-spacing:.04em}
+}
+body[style*="overflow: hidden"] .sp-cta{display:none!important}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+/* color variant: アクセントを塗りで効かせる */
+.btn-fill,.gnav .btn{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+.btn-fill:hover{background:var(--acc-hover);border-color:var(--acc-hover)}
+.btn-line{border-color:var(--green)}
+.btn-line:hover{background:var(--green);border-color:var(--green);color:#fff}
+.flow-bar div[style*="var(--green)"]{background:var(--acc)!important;color:var(--acc-ink);font-weight:500}
+.flow-bar div[style*="var(--copper)"]{background:var(--green)!important;color:#fff}
+.ans .c em,.f-row label i,.f-row .lbl i{background:var(--acc);color:var(--acc-ink)}
+.cmp tr.us .mk{color:var(--acc-dk)}
+.sec-green .sec-head .label,.contact .label,.root .n{color:var(--acc-dk)}
+.roots-tl em{border-color:var(--acc-dk)}
+</style>
+</head>
+<body>
+
+<header class="hd" id="hd">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="URL Universal Research Laboratory トップへ">
+      <svg viewBox="0 0 64 50" aria-hidden="true"><circle cx="34" cy="38" r="9" fill="#EAEAD9"/><polyline points="4,48 4,20 32,4 60,20 60,48" fill="none" stroke="#B87E58" stroke-width="3"/></svg>
+      <b>URL</b><span>Universal Research Laboratory</span>
+    </a>
+    <nav class="gnav" id="gnav" aria-label="ページ内メニュー">
+      <a href="#issues">課題</a>
+      <a href="#about">5INとは</a>
+      <a href="#program">プログラム</a>
+      <a href="#faq">よくある質問</a>
+      <a class="btn btn-fill" href="#contact">ご相談・資料請求</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="メニューを開く" aria-expanded="false" aria-controls="gnav"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-head">
+    <p class="hero-eyebrow">同じ部署で1年、職場の会話を変える対話型の年間プログラム</p>
+    <div class="hero-mark"><b>5IN</b><span>ファイブ・イン</span></div>
+    <h1>知的な対話で、<br>自分と社会を深く知り、<br>価値観を育てる。</h1>
+    <p class="hero-lead">同じ部署の10〜20名で、月に1回・90分を1年。答えを配る研修ではなく、語り、問い返される対話の場で、一人ひとりが自分の言葉を見つけ、職場の会話と働き方を変えていきます。</p>
+    <div class="hero-cta">
+      <a class="btn btn-fill" href="#contact" data-type="consult">60分のご相談を申し込む</a>
+      <a class="btn btn-line" href="#contact" data-type="doc">サービス資料を請求する</a>
+    </div>
+    <p class="hero-price">オンラインで60分。職場の状況を伺い、合うテーマと進め方を一緒に見立てます</p>
+  </div>
+</section>
+
+<section class="sec" id="record">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">TRACK RECORD</p>
+      <h2>企業や団体で、<br class="sp-only">対話の場を150回以上</h2>
+      <p>5INは、これまでの場で磨いた問いと進め方をもとに、キャリアデザインとウェルビーイングの2つのテーマの年間プログラムとして設計しました。</p>
+    </div>
+    <div class="record">
+      <div><b>2018</b><span>対話の場の開始年</span></div>
+      <div><b>150<small>+</small></b><span>企業・団体での開催回数</span></div>
+      <div><b>6<small>年</small></b><span>一社での最長継続年数</span></div>
+    </div>
+    <ul class="clients" aria-label="主な実施先">
+      <li>大手エレクトロニクスメーカー<em>2020年〜 約60回</em></li>
+      <li>大手総合不動産会社<em>2019〜2023年 約40回</em></li>
+      <li>大手製薬会社<em>2020〜2022年 約18回</em></li>
+      <li>大手不動産会社<em>2021年〜 約10回</em></li>
+      <li>大手IT・電機メーカー（3拠点）<em>2023〜2025年 5回</em></li>
+      <li>大手設計事務所／<wbr>大手精密機器メーカー<em>2025年〜 5回</em></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec sec-beige" id="issues">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">ISSUES</p>
+      <h2>人材育成の3つのテーマすべてで、<br class="br-pc">問題が起きている</h2>
+      <p>社員が自ら育ち、力を発揮し、働き続けられる状態をつくる。その土台になる「方向」「関係」「持続」の3つで、数字に表れる問題が起きています。</p>
+    </div>
+    <div class="issues">
+      <div class="issue">
+        <svg viewBox="0 0 120 96" aria-hidden="true"><circle cx="92" cy="20" r="13" fill="#FAD0E2"/><polyline points="12,86 36,86 36,64 60,64 60,42 84,42" fill="none" stroke="#D9136F" stroke-width="3"/></svg>
+        <h3><small>01 DIRECTION</small>方向　キャリアデザイン</h3>
+        <ul>
+          <li><p>キャリアを自分で描けない</p><b>20.0<small>%</small></b><span>「目指すべきキャリアがわからない」</span></li>
+          <li><p>自ら学ぶ人が少ない</p><b>64.5<small>%</small></b><span>自己啓発を行っていない</span></li>
+          <li><p>制度があっても、手が挙がらない</p><b>10.7<small>%</small></b><span>副業制度がある企業で、実際に副業する正社員</span></li>
+        </ul>
+      </div>
+      <div class="issue">
+        <svg viewBox="0 0 120 96" aria-hidden="true"><circle cx="60" cy="70" r="13" fill="#FAD0E2"/><path d="M30 90V40L56 14M64 14L90 40V90" fill="none" stroke="#D9136F" stroke-width="3"/></svg>
+        <h3><small>02 RELATIONSHIP</small>関係　職場・チーム</h3>
+        <ul>
+          <li><p>職場で、本音が出ない</p><b>50.8<small>%</small></b><span>本音で話せる相手が、職場に1人もいない</span></li>
+          <li><p>新しいことを試せない</p><b>33<small>%</small></b><span>新しいやり方を試すのが安全だと感じる（世界は56%）</span></li>
+          <li><p>人事と現場で、見え方が逆</p><b>5<small>割超</small></b><span>の人事が「自社の心理的安全性は高い」と回答</span></li>
+        </ul>
+      </div>
+      <div class="issue">
+        <svg viewBox="0 0 120 96" aria-hidden="true"><circle cx="26" cy="64" r="12" fill="#FAD0E2"/><circle cx="96" cy="30" r="12" fill="#FAD0E2"/><line x1="44" y1="88" x2="76" y2="10" stroke="#D9136F" stroke-width="3"/></svg>
+        <h3><small>03 SUSTAINABILITY</small>持続　ウェルビーイング</h3>
+        <ul>
+          <li><p>休む人・辞める人が出ている</p><b>92.9<small>%</small></b><span>1,000人以上の事業所で、メンタル不調により1か月以上休業・退職した人がいた割合</span></li>
+          <li><p>施策が「測る」「配る」で終わる</p><b>60.6<small>%</small></b><span>サーベイの結果が何に活かされているかわからない</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="note src">出典：厚生労働省 能力開発基本調査（令和7年度）・労働安全衛生調査（令和7年）、インディードリクルートパートナーズ（2024）、パーソル総合研究所（2024）、PwC（2025）、日本の人事部 人事白書（2025）、バヅクリ（2022）</p>
+  </div>
+</section>
+
+<section class="sec sec-green" id="roots">
+  <div class="wrap narrow">
+    <div class="sec-head">
+      <p class="label">ROOT CAUSES</p>
+      <h2>問題をたどると、<br class="br-pc">手前にある4つの根本要因に行き着く</h2>
+    </div>
+    <div class="roots">
+      <div class="root"><span class="n">1</span><h3>何を大切にし、何のために働き・学ぶのかを、言葉にする機会がない</h3><p><small>既存の施策で解けない理由</small>研修は知識を渡し、面談は評価の場になる。価値観は教えられないし、評価の場では語られない。</p></div>
+      <div class="root"><span class="n">2</span><h3>経験や考えを語り、問い返される場がない</h3><p><small>既存の施策で解けない理由</small>1on1は平均月0.8回で業務報告になり、質は上司の技量に左右される。</p></div>
+      <div class="root"><span class="n">3</span><h3>育成が答えを外から渡す形で、自分の仕事に置き換える時間がない</h3><p><small>既存の施策で解けない理由</small>研修もeラーニングも、知識を配るところまでが商品になっている。</p></div>
+      <div class="root"><span class="n">4</span><h3>学びが一度きり・個人で終わり、同じ職場で続かない</h3><p><small>既存の施策で解けない理由</small>研修は単発で個人単位。職場で使われる内容は、1年後に34%まで減る。</p></div>
+    </div>
+    <p class="roots-tl">足りないのは、知識でも制度でもない。<br><em>自分の考えを語り、問い返され、それを同じ職場で続ける場</em>である。</p>
+    <p class="note" style="color:#C4C4C3;margin-top:24px;text-align:center">1年後34%：Saks &amp; Belcourt（2006, Human Resource Management）／1on1 月0.8回：パーソル総合研究所（2024）</p>
+  </div>
+</section>
+
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">CONCEPT</p>
+      <h2>答えを配るのではなく、<br>自分の言葉を見つける場を。</h2>
+      <p>人に語り、問い返される対話の中で、一人ひとりが自分の言葉を見つけ、よりよく働き、よりよく生きるための一歩を自分で決める。5INは、そのための場を職場の中につくります。</p>
+    </div>
+    <div class="vs">
+          <p class="vs-h l"><small>講義型の学び</small>答えを配る場</p><span></span><p class="vs-h r"><small>5IN</small><span class="nw">自分の言葉を</span><span class="nw">見つける場</span></p>
+          <div class="vs-fig l"><svg class="vs-svg" viewBox="0 0 360 230" role="img" aria-label="講師1人から参加者へ、一方向に答えが渡される図"><line x1="180" y1="68" x2="60" y2="130" stroke="#B5B4B6" stroke-width="1.2"/><path d="M-7,-4 L0,0 L-7,4" fill="none" stroke="#B5B4B6" stroke-width="1.2" transform="translate(60,130) rotate(152.7)"/><line x1="180" y1="68" x2="120" y2="130" stroke="#B5B4B6" stroke-width="1.2"/><path d="M-7,-4 L0,0 L-7,4" fill="none" stroke="#B5B4B6" stroke-width="1.2" transform="translate(120,130) rotate(134.1)"/><line x1="180" y1="68" x2="180" y2="130" stroke="#B5B4B6" stroke-width="1.2"/><path d="M-7,-4 L0,0 L-7,4" fill="none" stroke="#B5B4B6" stroke-width="1.2" transform="translate(180,130) rotate(90.0)"/><line x1="180" y1="68" x2="240" y2="130" stroke="#B5B4B6" stroke-width="1.2"/><path d="M-7,-4 L0,0 L-7,4" fill="none" stroke="#B5B4B6" stroke-width="1.2" transform="translate(240,130) rotate(45.9)"/><line x1="180" y1="68" x2="300" y2="130" stroke="#B5B4B6" stroke-width="1.2"/><path d="M-7,-4 L0,0 L-7,4" fill="none" stroke="#B5B4B6" stroke-width="1.2" transform="translate(300,130) rotate(27.3)"/><circle cx="180" cy="42" r="24" fill="#99989B"/><text x="180" y="47" text-anchor="middle" font-size="13" fill="#fff">講師</text><circle cx="60" cy="150" r="11" fill="#D4D3D3"/><circle cx="120" cy="150" r="11" fill="#D4D3D3"/><circle cx="180" cy="150" r="11" fill="#D4D3D3"/><circle cx="240" cy="150" r="11" fill="#D4D3D3"/><circle cx="300" cy="150" r="11" fill="#D4D3D3"/><circle cx="90" cy="200" r="11" fill="#D4D3D3"/><circle cx="150" cy="200" r="11" fill="#D4D3D3"/><circle cx="210" cy="200" r="11" fill="#D4D3D3"/><circle cx="270" cy="200" r="11" fill="#D4D3D3"/></svg></div><span class="vs-mid"><svg viewBox="0 0 22 12" aria-hidden="true"><path d="M0 6h20M15 1l5 5-5 5" fill="none" stroke="#D9136F" stroke-width="1.5"/></svg></span><div class="vs-fig r"><svg class="vs-svg" viewBox="0 0 360 230" role="img" aria-label="同じ職場の仲間が問いを囲み、語り合い問い返し合う図"><circle cx="180" cy="115" r="88" fill="none" stroke="#D4D3D3" stroke-width="1.2"/><line x1="180.0" y1="27.0" x2="268.0" y2="115.0" stroke="#D9136F" stroke-width="1" stroke-opacity=".6"/><line x1="242.2" y1="52.8" x2="242.2" y2="177.2" stroke="#D9136F" stroke-width="1" stroke-opacity=".6"/><line x1="268.0" y1="115.0" x2="180.0" y2="203.0" stroke="#D9136F" stroke-width="1" stroke-opacity=".6"/><line x1="242.2" y1="177.2" x2="117.8" y2="177.2" stroke="#D9136F" stroke-width="1" stroke-opacity=".6"/><line x1="180.0" y1="203.0" x2="92.0" y2="115.0" stroke="#D9136F" stroke-width="1" stroke-opacity=".6"/><line x1="117.8" y1="177.2" x2="117.8" y2="52.8" stroke="#D9136F" stroke-width="1" stroke-opacity=".6"/><line x1="92.0" y1="115.0" x2="180.0" y2="27.0" stroke="#D9136F" stroke-width="1" stroke-opacity=".6"/><line x1="117.8" y1="52.8" x2="242.2" y2="52.8" stroke="#D9136F" stroke-width="1" stroke-opacity=".6"/><circle cx="180" cy="115" r="34" fill="#1C1C1E"/><text x="180" y="122" text-anchor="middle" font-size="19" font-weight="500" fill="#F4F3F1" letter-spacing="2">問い</text><circle cx="180.0" cy="27.0" r="12" fill="#4E4C51"/><circle cx="242.2" cy="52.8" r="12" fill="#4E4C51"/><circle cx="268.0" cy="115.0" r="12" fill="#4E4C51"/><circle cx="242.2" cy="177.2" r="12" fill="#4E4C51"/><circle cx="180.0" cy="203.0" r="12" fill="#4E4C51"/><circle cx="117.8" cy="177.2" r="12" fill="#4E4C51"/><circle cx="92.0" cy="115.0" r="12" fill="#4E4C51"/><circle cx="117.8" cy="52.8" r="12" fill="#4E4C51"/></svg></div>
+          <p class="vs-row l">答えを受け取る</p><span class="vs-mid"><svg viewBox="0 0 22 12" aria-hidden="true"><path d="M0 6h20M15 1l5 5-5 5" fill="none" stroke="#D9136F" stroke-width="1.5"/></svg></span><p class="vs-row r"><span><span class="nw">問いを手がかりに、</span><span class="nw">自分の言葉を見つける</span></span></p>
+          <p class="vs-row l"><span><span class="nw">講師の話を、</span><span class="nw">一方向に聞く</span></span></p><span class="vs-mid"><svg viewBox="0 0 22 12" aria-hidden="true"><path d="M0 6h20M15 1l5 5-5 5" fill="none" stroke="#D9136F" stroke-width="1.5"/></svg></span><p class="vs-row r"><span><span class="nw">仲間に語り、</span><span class="nw">問い返される</span></span></p>
+          <p class="vs-row l">その日で終わる</p><span class="vs-mid"><svg viewBox="0 0 22 12" aria-hidden="true"><path d="M0 6h20M15 1l5 5-5 5" fill="none" stroke="#D9136F" stroke-width="1.5"/></svg></span><p class="vs-row r"><span><span class="nw">同じ職場の仲間と、</span><span class="nw">月1回・1年続く</span></span></p>
+        </div>
+  </div>
+</section>
+
+<section class="sec sec-beige" id="name">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">SERVICE NAME</p>
+      <h2>「5IN」に込めた、5つの言葉</h2>
+      <p>「IN」で始まる5つの言葉。毎回の90分の中に、この5つがそろうように設計しています。</p>
+    </div>
+    <div class="five">
+      <div><b><i>IN</i>SIGHT</b><h3>新たな気づき</h3><p>考え方の型と問いが、いつもの仕事に新しい見方を持ち込む</p></div>
+      <div><b><i>IN</i>SIDE</b><h3>自己理解</h3><p>自分の経験と価値観を言葉にし、何を大切に働きたいかを知る</p></div>
+      <div><b><i>IN</i>TELLIGENCE</b><h3>知性と思考</h3><p>研究や理論を手がかりに、答えが一つでない問いを自分の頭で考え抜く</p></div>
+      <div><b><i>IN</i>TERACTION</b><h3>対話と相互作用</h3><p>同じ職場の仲間と語り、問い返される中で、考えが動き、関係が変わる</p></div>
+      <div><b><i>IN</i>TEGRATION</b><h3>統合と実践</h3><p>毎回「明日の一歩」を決め、翌月に確かめる。学びを仕事と日々に結びつける</p></div>
+    </div>
+
+    <div class="answers">
+      <div class="sub-h" style="margin-top:0"><h3>4つの根本要因に、対話の場で一つずつ答える</h3></div>
+      <div class="ans-head"><span>根本要因</span><span>大切にしていること</span><span>プログラムでの形</span></div>
+      <div class="ans"><div class="c"><em>1</em>言葉にする機会がない</div><p class="v">交わすのは知識ではなく、体験と価値観。目的地は、自分を知ること</p><p class="f">毎回の問いに、自分の経験と考えで答える</p></div>
+      <div class="ans"><div class="c"><em>2</em>語り、問い返される場がない</div><p class="v">進行役は教えない。問い、問い返し、安心して話せる場をつくる</p><p class="f">対話に40分。上司も部下も、同じ問いに答える</p></div>
+      <div class="ans"><div class="c"><em>3</em>答えを外から渡している</div><p class="v">型は、考えるきっかけとして使う。正解を教えない</p><p class="f">型の紹介は全体の2割まで。8割は「自分なら」「自分のチームなら」</p></div>
+      <div class="ans"><div class="c"><em>4</em>一度きりで続かない</div><p class="v">「明日から何かやってみよう」で終える</p><p class="f">同じ職場の仲間と月1回・1年。決めた一歩を翌月に確かめる</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="program">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">PROGRAM</p>
+      <h2>月に1回、同じ仲間と90分。<br class="br-pc">1年で12回</h2>
+    </div>
+    <ul class="ov">
+      <li><small>対象（同じ部署）</small><b>10〜20名</b></li>
+      <li><small>回数</small><b>年12回（月1回）</b></li>
+      <li><small>時間</small><b>1回90分</b></li>
+      <li><small>形式</small><b>対面／オンライン</b></li>
+    </ul>
+
+    <div class="tabs" role="tablist" aria-label="テーマ">
+      <button class="tab" role="tab" id="t-career" aria-selected="true" aria-controls="p-career">キャリアデザイン<small>キャリア自律</small></button>
+      <button class="tab" role="tab" id="t-wb" aria-selected="false" aria-controls="p-wb" tabindex="-1">ウェルビーイング<small>セルフマネジメント</small></button>
+    </div>
+
+    <div class="panel-p" id="p-career" role="tabpanel" aria-labelledby="t-career">
+      <p class="prog-goal"><small>1年後のゴール</small>自分のキャリアを、自分の言葉で書けるようになる</p>
+
+      <div class="sub-h"><h3>1年で起きる変化</h3><p>確かめ方：進路について一人称で語られた記述の推移／キャリア面談シートの記述量／社内での手挙げ・挑戦の件数</p></div>
+      <div class="year">
+        <div class="before"><b>始める前</b>キャリアは会社が決めるものだと感じている。手が挙がらない</div>
+        <div class="y"><p class="m">3か月</p><p class="st"><small>到達する状態</small>幸せに働ける条件と、貢献している相手を言葉にできる</p><div class="ev"><p><b>第1回</b> 自律の段階を言葉にし、仕事を組み替える一歩を決める</p><p><b>第2回</b> 幸せを感じた場面を話し、満たすものが人によって違うと知る</p></div></div>
+        <div class="y"><p class="m">6か月</p><p class="st"><small>到達する状態</small>時間と機会の使い方を見直し、「本当はこうしたい」を口に出せる</p><div class="ev"><p><b>第4回</b> 10年後の自分を想像し、将来を他人事にしている原因に気づく</p><p><b>第6回</b> 強みと志向を棚卸しし、いまの職場での挑戦も含めて選択肢を言葉にする</p></div></div>
+        <div class="y"><p class="m">9か月</p><p class="st"><small>到達する状態</small>価値を出す進め方を語れる。やめる作業を自分で決めている</p><div class="ev"><p><b>第7回</b> 仕事を「答えるべき問い」と「やめてよい作業」に分ける</p><p><b>第8回</b> 悩みを自分と相手の課題に分け、手をつける範囲を決める</p></div></div>
+        <div class="y"><p class="m">12か月</p><p class="st"><small>到達する状態</small>自分のキャリアを自分の言葉で書ける。同僚の相談に乗れる人が現れる</p><div class="ev"><p><b>第10回</b> 意見の裏にある経験と価値観を書き出し、振り返り方を決める</p><p><b>第12回</b> 1年を振り返り、次の一歩とキャリアの言葉を書く</p></div></div>
+      </div>
+
+    </div>
+
+    <div class="panel-p" id="p-wb" role="tabpanel" aria-labelledby="t-wb" hidden>
+      <p class="prog-goal"><small>1年後のゴール</small>負荷の相談が「事後」ではなく「事前」に出る</p>
+
+      <div class="sub-h"><h3>1年で起きる変化</h3><p>確かめ方：「やめたこと」の宣言数／余白・回復についての自己申告／ストレスチェック集団分析の推移（ご提供がある場合）</p></div>
+      <div class="year">
+        <div class="before"><b>始める前</b>忙しさが当たり前になり、やめる判断がない。休職の予兆が出ている</div>
+        <div class="y"><p class="m">3か月</p><p class="st"><small>到達する状態</small>自分の時間の使い方と、働く幸せの条件を説明できる</p><div class="ev"><p><b>第1回</b> オーバーワークの場面を話し、消耗の原因が量だけではないと気づく</p><p><b>第2回</b> 時間感覚のくせを知り、自分に合う時間の使い方を一つ決める</p></div></div>
+        <div class="y"><p class="m">6か月</p><p class="st"><small>到達する状態</small>集中を妨げている原因を特定し、環境を一つ変えている</p><div class="ev"><p><b>第4回</b> 時間を奪うアプリを見せ合い、自分の環境のルールを一つ決める</p><p><b>第5回</b> 場面ごとに必要な集中の種類を当てはめ、使い分けを決める</p></div></div>
+        <div class="y"><p class="m">9か月</p><p class="st"><small>到達する状態</small>「やめたこと」をチームで共有できる。優先順位の会話が成り立つ</p><div class="ev"><p><b>第7回</b> 「やめても誰も困らない仕事」を出し合い、一つやめる</p><p><b>第8回</b> チームの決め方とルールの曖昧な点を出し合い、一つ決め直す</p></div></div>
+        <div class="y"><p class="m">12か月</p><p class="st"><small>到達する状態</small>繁忙期でも回復の手立てを持っている。負荷の相談が事前に出る</p><div class="ev"><p><b>第10回</b> 率直に話せる職場のために、自分が明日から取る行動を決める</p><p><b>第11回</b> 自分に合う続け方を知り、習慣を一つ決めて翌月に確かめる</p></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-beige" id="session">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">ONE SESSION</p>
+      <h2>1回90分のうち、半分近くを<br class="br-pc">参加者同士の対話に使う</h2>
+      <p>例：キャリアデザイン 第1回「自律的に働くために」。時間は目安で、テーマと人数に合わせて調整します。オンラインでも同じ流れです。</p>
+    </div>
+    <div class="flow-bar" aria-hidden="true">
+      <div style="flex:10;background:var(--green-4)">10分</div>
+      <div style="flex:15;background:var(--green-3)">15分</div>
+      <div style="flex:40;background:var(--green)">40分　対話</div>
+      <div style="flex:15;background:var(--green-2)">15分</div>
+      <div style="flex:10;background:var(--copper)">10分</div>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>チェックイン</h3><p>二人一組で、前回決めた「明日の一歩」がどうだったかを話す</p><q>この1か月で、自分から仕事を動かせた場面は</q></div>
+      <div class="step"><h3>進行役のインプット</h3><p>考え方の型と中心の問いを示す。全体の2割までに抑える</p><q>自律には「低次」と「高次」がある</q></div>
+      <div class="step main"><h3>参加者同士の対話</h3><p>4〜5人の組で、上司も部下も同じ問いに自分の経験で答える。この40分が5INの中心です。</p><q>あなたの自律レベルは、今どこか</q></div>
+      <div class="step"><h3>全体シェア</h3><p>組ごとに出た考えを共有し、進行役が問い返して深める</p><q>職場で変えられるものを探す</q></div>
+      <div class="step"><h3>内省と明日の一歩</h3><p>気づきと明日から試す一つを書く。翌月はここから始まる</p><q>明日から組み替える仕事を一つ決める</q></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="report">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">REPORT</p>
+      <h2>参加者の本音を守りながら、<br class="br-pc">人事には変化の根拠をお届けする</h2>
+    </div>
+    <div class="report">
+      <ul class="timeline">
+        <li><em>毎回</em><div><b>振り返りシート</b><span>今日の気づき／自分なら・チームなら／明日の一歩／前回の一歩ができた度合い（5段階）</span></div></li>
+        <li><em>第6回</em><div><b>中間報告</b><span>参加率と振り返りの集計／「明日の一歩」の実行率の推移／対話で多く出たテーマ／後半6回の調整案</span></div></li>
+        <li><em>第12回</em><div><b>年間報告</b><span>同じ問いへの答えの、第1回と第12回の比較／既存データとの突き合わせ／次の1年の提案</span></div></li>
+      </ul>
+      <div class="give">
+        <div><h4><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="none" stroke="#1C1C1E" stroke-width="1.5"/><path d="M6 10.5l2.6 2.5L14 7.5" fill="none" stroke="#1C1C1E" stroke-width="1.5"/></svg>お届けするもの</h4><ul><li>参加率と、振り返りシートの集計値</li><li>匿名化した対話の傾向</li><li>本人が共有に同意した記述（匿名）</li></ul></div>
+        <div><h4><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="none" stroke="#D9136F" stroke-width="1.5"/><path d="M7 7l6 6M13 7l-6 6" fill="none" stroke="#D9136F" stroke-width="1.5"/></svg>お届けしないもの</h4><ul><li>個人の発言の内容</li><li>個人が特定できる記述</li><li>個人ごとの評価や点数</li></ul></div>
+      </div>
+    </div>
+    <p class="promise">対話の内容を人事評価に使わないことは、第1回に参加者全員と確認してから始めます。</p>
+  </div>
+</section>
+
+<section class="sec sec-paper" id="compare">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">COMPARISON</p>
+      <h2>「職場の会話を変える」なら、<br class="br-pc">続く場が要る</h2>
+    </div>
+    <table class="cmp">
+      <thead><tr><th></th><th>続く</th><th><span class="lg">同じ職場の<br>仲間と</span><span class="sm">同じ<br>職場</span></th><th><span class="lg">受講者が<br>話す量</span><span class="sm">発言<br>量</span></th><th><span class="lg">職場で<br>確かめる</span><span class="sm">確認</span></th><th><span class="lg">人事の<br>工数</span><span class="sm">工数</span></th><th>向いている目的</th></tr></thead>
+      <tbody>
+        <tr><td>1日の集合研修<small class="pp">知識やスキルを、短期間でそろえて届ける</small></td><td class="mk" data-l="続く">△</td><td class="mk" data-l="同じ職場の仲間と">△</td><td class="mk" data-l="受講者が話す量">△</td><td class="mk" data-l="職場で確かめる">△</td><td class="mk" data-l="人事の工数">○</td><td data-l="向いている目的">知識やスキルを、短期間でそろえて届ける</td></tr>
+        <tr><td>eラーニング<small class="pp">全社に、同じ知識を一斉に届ける</small></td><td class="mk" data-l="続く">△</td><td class="mk" data-l="同じ職場の仲間と">×</td><td class="mk" data-l="受講者が話す量">×</td><td class="mk" data-l="職場で確かめる">×</td><td class="mk" data-l="人事の工数">◎</td><td data-l="向いている目的">全社に、同じ知識を一斉に届ける</td></tr>
+        <tr><td>1on1・キャリア面談<small class="pp">上司と部下の、個別の関係を深める</small></td><td class="mk" data-l="続く">○</td><td class="mk" data-l="同じ職場の仲間と">△</td><td class="mk" data-l="受講者が話す量">○</td><td class="mk" data-l="職場で確かめる">○</td><td class="mk" data-l="人事の工数">○</td><td data-l="向いている目的">上司と部下の、個別の関係を深める</td></tr>
+        <tr><td>外部コーチング<small class="pp">選ばれた少数の個人を、深く支援する</small></td><td class="mk" data-l="続く">○</td><td class="mk" data-l="同じ職場の仲間と">×</td><td class="mk" data-l="受講者が話す量">◎</td><td class="mk" data-l="職場で確かめる">△</td><td class="mk" data-l="人事の工数">○</td><td data-l="向いている目的">選ばれた少数の個人を、深く支援する</td></tr>
+        <tr class="us"><td>5IN<small class="pp">一つの部署の会話と働き方を、1年かけて変える</small></td><td class="mk" data-l="続く">◎</td><td class="mk" data-l="同じ職場の仲間と">◎</td><td class="mk" data-l="受講者が話す量">◎</td><td class="mk" data-l="職場で確かめる">◎</td><td class="mk" data-l="人事の工数">○</td><td data-l="向いている目的">一つの部署の会話と働き方を、1年かけて変える</td></tr>
+      </tbody>
+    </table>
+    <p class="cmp-note">知識をそろえるなら集合研修やeラーニングが、個人を深く支えるならコーチングが向いています。5INは、それらを置き換えるものではなく、一つの部署の会話と働き方を変えたいときの選択肢です。</p>
+    <p class="note" style="margin-top:12px">判断の基準　続く：同じ参加者で半年以上くり返すか／同じ職場の仲間と：毎日一緒に働く人たちで受けるか／話す量：受講者の発言が全体の半分を超えるか／職場で確かめる：使ったかを次の機会に確かめるか</p>
+  </div>
+</section>
+
+<section class="sec" id="facilitator">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">FACILITATOR</p>
+      <h2>全12回を、同じ進行役が担当します</h2>
+    </div>
+    <div class="fac">
+      <div class="fac-ph"><img src="assets/img/portrait.jpg" alt="進行役 浦野真理のポートレート" loading="lazy" width="1024" height="1024"></div>
+      <div>
+        <p class="fac-name"><small>MAKOTO URANO</small>浦野 真理</p>
+        <p class="fac-role">ユニバーサルリサーチラボ合同会社 代表</p>
+        <ul class="fac-rec" aria-label="進行役の実績">
+          <li><b>150<small>回+</small></b><span>企業・団体での開催回数</span></li>
+          <li><b>6<small>年</small></b><span>一社での最長継続年数</span></li>
+          <li><b>8<small>冊</small></b><span>著書</span></li>
+        </ul>
+        <dl class="prof">
+          <div><dt>経歴</dt><dd>早稲田大学 理工学部、東京工業大学大学院。大学と企業で研究職</dd></div>
+          <div><dt>現在</dt><dd>2018年から対話の場を主宰。2020年に当社を設立</dd></div>
+          <div><dt>実施先</dt><dd>大手エレクトロニクスメーカー、大手製薬会社、大手総合不動産会社ほか</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-beige" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">PROCESS</p>
+      <h2>ご相談から初回まで、約1か月</h2>
+    </div>
+    <ol class="process">
+      <li><span class="dot">1</span><em>1週目</em><h3>ご相談</h3><p>60分。職場の状況、対象部署、テーマを伺います。可能なら部長にもご同席いただきます</p></li>
+      <li><span class="dot">2</span><em>2週目</em><h3>ご提案</h3><p>テーマ、12回の問いの調整案、確かめ方、費用。御社向けの第1回の問い案もお渡しします</p></li>
+      <li><span class="dot">3</span><em>3週目</em><h3>ご判断・ご契約</h3><p>人事・部長・決裁者の方にご説明します。稟議に使える要約資料もお渡しします</p></li>
+      <li><span class="dot">4</span><em>4週目</em><h3>準備</h3><p>日程の確定、参加者へのご案内、事前アンケートで開始時点の状態を記録します</p></li>
+      <li><span class="dot">5</span><em>月1回×12回</em><h3>実施</h3><p>第6回の中間報告会で後半を一緒に見直し、第12回の年間報告会で1年の変化をご報告します</p></li>
+      <li><span class="dot">6</span><em>第12回のあと</em><h3>次の1年</h3><p>同じ部署でテーマを変えて続けるか、ほかの部署へ広げるかを一緒に決めます</p></li>
+    </ol>
+    <p class="note process-note">助成金の対象と確認でき、利用する場合は、訓練開始の1か月前までに計画届の提出が必要なため、初回まで約2か月となります。</p>
+  </div>
+</section>
+
+<section class="sec" id="faq">
+  <div class="wrap narrow">
+    <div class="sec-head">
+      <p class="label">FAQ</p>
+      <h2>よくいただくご質問</h2>
+    </div>
+    <div class="faq">
+      <details><summary><em>Q</em>5INとしての導入実績はありますか<svg viewBox="0 0 18 18" aria-hidden="true"><path d="M9 2v14M2 9h14" stroke="#D9136F" stroke-width="1.5"/></svg></summary><div class="a"><em>A</em><p>150回以上の対話の場で得た知見を、キャリアデザインとウェルビーイングの2つのテーマの年間プログラムとして体系化したものです。ご提案時に、御社向けの第1回の問いと進め方の案を先にお出しします。</p></div></details>
+      <details><summary><em>Q</em>上司がいる場で、部下は本音を話せますか<svg viewBox="0 0 18 18" aria-hidden="true"><path d="M9 2v14M2 9h14" stroke="#D9136F" stroke-width="1.5"/></svg></summary><div class="a"><em>A</em><p>評価の場ではなく、上司も部下も一人の参加者として同じ問いに答える場です。評価に使わないことを第1回で全員と確認します。</p></div></details>
+      <details><summary><em>Q</em>研修はすでに体系的に行っています<svg viewBox="0 0 18 18" aria-hidden="true"><path d="M9 2v14M2 9h14" stroke="#D9136F" stroke-width="1.5"/></svg></summary><div class="a"><em>A</em><p>既存の研修を置き換えるものではありません。研修で得たことを、仲間と自分たちの仕事に置き換えて話す場として併用できます。</p></div></details>
+      <details><summary><em>Q</em>キャリアをテーマにすると、離職が増えませんか<svg viewBox="0 0 18 18" aria-hidden="true"><path d="M9 2v14M2 9h14" stroke="#D9136F" stroke-width="1.5"/></svg></summary><div class="a"><em>A</em><p>中心は、いまの職場での選択肢と挑戦を言葉にすることです。年間報告で、社内の手挙げ・挑戦の件数もあわせて確認します。</p></div></details>
+      <details><summary><em>Q</em>結局は雑談になりませんか<svg viewBox="0 0 18 18" aria-hidden="true"><path d="M9 2v14M2 9h14" stroke="#D9136F" stroke-width="1.5"/></svg></summary><div class="a"><em>A</em><p>毎回の問いと到達点を設計し、最後に「明日の一歩」を決めます。翌月はその一歩から始まり、話が回をまたいでつながります。</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-green" id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <p class="label">CONTACT</p>
+        <h2>まずは、<br>60分のご相談から。</h2>
+        <p>職場の状況を伺い、どちらのテーマが合うか、どの部署から始めるとよいかを一緒に見立てます。オンラインで承ります。サービス資料（PDF）のご請求もこちらから。</p>
+      </div>
+      <form id="form" novalidate>
+        <div class="f-row"><span class="lbl">ご用件<i>必須</i></span>
+          <div class="radios">
+            <label><input type="radio" name="type" value="consult" checked>60分のご相談</label>
+            <label><input type="radio" name="type" value="doc">サービス資料の請求</label>
+            <label><input type="radio" name="type" value="estimate">お見積もりの依頼</label>
+          </div>
+        </div>
+        <div class="f-2">
+          <div class="f-row"><label for="f-co">会社名<i>必須</i></label><input id="f-co" name="company" autocomplete="organization" required></div>
+          <div class="f-row"><label for="f-dep">部署・役職</label><input id="f-dep" name="dept"></div>
+        </div>
+        <div class="f-2">
+          <div class="f-row"><label for="f-name">お名前<i>必須</i></label><input id="f-name" name="name" autocomplete="name" required></div>
+          <div class="f-row"><label for="f-mail">メールアドレス<i>必須</i></label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+        </div>
+        <div class="f-row"><label for="f-msg">職場の状況やご関心（任意）</label><textarea id="f-msg" name="message" rows="4" placeholder="例：開発部門の20名で、キャリアの話が出にくい"></textarea></div>
+        <p class="f-note">いただいた情報は、ご相談・資料送付のご連絡にのみ使用します。</p>
+        <button class="btn btn-fill" type="submit">送信する</button>
+        <p class="sent" id="sent" role="status">送信を受け付けました（※プレビュー版のため、実際には送信されていません）。</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <div>
+      <a class="logo" href="#top"><svg viewBox="0 0 64 50" aria-hidden="true"><circle cx="34" cy="38" r="9" fill="#EAEAD9"/><polyline points="4,48 4,20 32,4 60,20 60,48" fill="none" stroke="#B87E58" stroke-width="3"/></svg><b>URL</b><span>Universal Research Laboratory</span></a>
+      <address>ユニバーサルリサーチラボ合同会社<br>〒150-0001 東京都渋谷区神宮前6丁目23-4</address>
+    </div>
+    <p class="en">© URL since 2016</p>
+  </div>
+</footer>
+
+<div class="sp-cta" id="spCta">
+  <a class="btn btn-line" href="#contact" data-type="doc" style="background:#fff">資料を請求</a>
+  <a class="btn btn-fill" href="#contact" data-type="consult">60分のご相談</a>
+</div>
+
+<script>
+(function(){
+  var hd=document.getElementById('hd'),sp=document.getElementById('spCta'),contact=document.getElementById('contact');
+  function onScroll(){var y=window.scrollY;hd.classList.toggle('is-scrolled',y>8);
+    var r=contact.getBoundingClientRect();sp.classList.toggle('show',y>(document.querySelector('.hero').offsetHeight)&&r.top>window.innerHeight*0.6);}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  var mb=document.getElementById('menuBtn'),nav=document.getElementById('gnav');
+  mb.addEventListener('click',function(){var o=nav.classList.toggle('open');mb.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':'';});
+  nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');mb.setAttribute('aria-expanded','false');document.body.style.overflow='';}});
+  var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+  function sel(t){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});}
+  tabs.forEach(function(t,i){t.addEventListener('click',function(){sel(t)});t.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='ArrowLeft'){var n=tabs[(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length];sel(n);n.focus();}});});
+  document.querySelectorAll('[data-type]').forEach(function(a){a.addEventListener('click',function(){var r=document.querySelector('input[name=type][value='+a.dataset.type+']');if(r)r.checked=true;});});
+  document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();var f=e.target;if(!f.reportValidity())return;document.getElementById('sent').style.display='block';});
+})();
+</script>
+</body>
+</html>
